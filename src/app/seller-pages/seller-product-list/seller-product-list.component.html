@@ -1,0 +1,67 @@
+
+<!-- <div id="main">
+    <div class="container">
+        <h1>Product List</h1>
+        <div class="product-list">
+            <div class="product">
+                <div class="product-inner">
+                    <p>image</p>
+                    <p>Name</p>
+                    <p>details</p>
+                    <p>color</p>
+                    <p>price</p>
+                </div>
+                <div class="product-inner2" *ngFor="let productList of productLists">
+                    <img [src]="productList.product_image_link" alt="Product 1">
+                    <h2>{{productList.product_name}}</h2>
+                    <p>{{productList.product_details}}</p>
+                    <p class="color" [style.backgroundColor]="productList.product_colour"
+                        title="{{productList.product_colour}}"></p>
+                    <span>Rs: {{productList.product_price}}</span>
+                </div>
+
+            </div>
+            Add more product items as needed
+        </div>
+    </div>
+</div> -->
+
+<div id="main">
+    <table class="table">
+        <!-- {{deleteMessgae}} -->
+        <thead>
+            <tr>
+                <th class="thead">Id</th>
+                <th class="thead">Image</th>
+                <th class="thead">ProductName</th>
+                <th class="thead">Productprice</th>
+                <th class="thead">Productcolor</th>
+                <th class="thead">Discription</th>
+                <th class="thead">Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let productList of productLists">
+                <td class="thead">{{productList.id}}</td>
+                <td class="thead img">
+                    <img [src]="productList.product_image_link" alt="Product 1">
+                </td>
+                <td class="thead">{{productList.product_name}}</td>
+                <td class="thead">Rs: {{productList.product_price}}</td>
+                <td class="thead">     <p class="color" [style.backgroundColor]="productList.product_colour"
+                    title="{{productList.product_colour}}"></p></td>
+                <td class="thead">{{productList.product_details}}</td>
+                <td class="thead">
+                    <button type="button" ><i
+                            class="fa-solid fa-trash"></i></button>&nbsp;&nbsp;
+                    <!-- <a routerLink="/seller-productForm/sellerproductUpdate/{{i.id}}"><i
+                            class="fa-solid fa-pen-to-square"></i></a> -->
+                </td>
+
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,102 @@
+<div id="main">
+    <!-- <header>
+        <h1>User Profile</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Write something about yourself here.</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: user@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </section>
+        </main>
+    </div> -->
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Admin profile</h2>
+            <ul>
+                <li>
+                    <h5>Name: <p>
+                            {{dealersDetails?.firstname}}&nbsp;{{dealersDetails?.lastname}}
+                        </p>
+                    </h5>
+                </li>
+                <li>
+                    <h5>Id: <p>
+                            {{dealersDetails?.id}}
+                        </p>
+                    </h5>
+                </li>
+                <li>
+                    <h5>service: <p>
+                            {{dealersDetails?.service}}
+                        </p>
+                    </h5>
+                </li>
+                <li>
+                    <h5>telecaller: <p>
+                            {{dealersDetails?.telecaller}}
+                        </p>
+                    </h5>
+                </li>
+                <li>
+                    <h5>createdOn Profile: <p>
+                            {{dealersDetails?.createdOn}}
+                        </p>
+                    </h5>
+                </li>
+
+
+            </ul>
+        </aside>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="" alt="Profile Image" class="profile-image">
+            </section>
+            <section id="skills">
+                <h2>Address</h2>
+                <ul>
+                    <li>
+                        <p>{{dealersDetails?.address}}</p>
+                    </li>
+
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <h5>Email: <p> {{dealersDetails?.email}} </p>
+                </h5>
+
+                <h5>Phone no: <p> {{dealersDetails?.phone}} </p>
+                </h5>
+                <h5>work phone no: <p> {{dealersDetails?.workphone}} </p>
+                </h5>
+            </section>
+            <section id="buttons">
+                <button style="background-color: green ; color: #fff;">edit</button>
+                <button style="background-color: red ; color: #fff;">delete</button>
+            </section>
+        </main>
+    </div>
+</div>
